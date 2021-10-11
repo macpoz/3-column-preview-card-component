@@ -23,6 +23,7 @@ section {
 @media (min-width: 660px) {
   section {
     flex-direction: row;
+    margin: 0 1.5rem;
   }
 }
 section article {
