@@ -13,7 +13,7 @@ body {
   font-size: 15px;
   background-color: #f2f2f2;
 }
-section {
+main {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -21,42 +21,42 @@ section {
   margin: 1.5rem;
 }
 @media (min-width: 660px) {
-  section {
+  main {
     flex-direction: row;
     margin: 0 1.5rem;
   }
 }
-section article {
+main .column {
   max-width: 307px;
 }
-section article:first-of-type {
+main .column:first-of-type {
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
 }
 @media (min-width: 660px) {
-  section article:first-of-type {
+  main .column:first-of-type {
     max-width: 308px;
     border-top-right-radius: 0;
     border-top-left-radius: 0.5rem;
     border-bottom-left-radius: 0.5rem;
   }
 }
-section article:last-of-type {
+main .column:last-of-type {
   border-bottom-left-radius: 0.5rem;
   border-bottom-right-radius: 0.5rem;
 }
 @media (min-width: 660px) {
-  section article:last-of-type {
+  main .column:last-of-type {
     max-width: 308px;
     border-bottom-left-radius: 0;
     border-top-right-radius: 0.5rem;
     border-bottom-right-radius: 0.5rem;
   }
 }
-section article > div {
+main .column > div {
   padding: 3rem;
 }
-section article header h2 {
+main .column header h2 {
   margin-bottom: 1.5rem;
   margin-top: 1.5rem;
   text-transform: uppercase;
@@ -66,25 +66,25 @@ section article header h2 {
   color: #f2f2f2;
 }
 @media (min-width: 660px) {
-  section article header h2 {
+  main .column header h2 {
     margin-top: 2rem;
     margin-bottom: 1.75rem;
   }
 }
 @media (min-width: 660px) {
-  section article p {
+  main .column p {
     line-height: 1.7;
   }
 }
-section article footer {
+main .column footer {
   margin-top: 2.5rem;
 }
 @media (min-width: 660px) {
-  section article footer {
+  main .column footer {
     margin-top: 5rem;
   }
 }
-section article footer button {
+main .column footer button {
   background-color: #f2f2f2;
   padding: 0.75rem 1.8rem;
   border-radius: 2rem;
