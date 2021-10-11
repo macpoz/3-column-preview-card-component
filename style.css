@@ -55,7 +55,7 @@ section article:last-of-type {
 section article > div {
   padding: 3rem;
 }
-section article header h1 {
+section article header h2 {
   margin-bottom: 1.5rem;
   margin-top: 1.5rem;
   text-transform: uppercase;
@@ -65,7 +65,7 @@ section article header h1 {
   color: #f2f2f2;
 }
 @media (min-width: 660px) {
-  section article header h1 {
+  section article header h2 {
     margin-top: 2rem;
     margin-bottom: 1.75rem;
   }
