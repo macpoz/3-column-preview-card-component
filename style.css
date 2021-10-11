@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lexend Deca', sans-serif;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  font-size: 15px;
+  background-color: #f2f2f2;
+}
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: rgba(255,255,255,0.75);
+  margin: 1.5rem;
+}
+@media (min-width: 660px) {
+  section {
+    flex-direction: row;
+  }
+}
+section article {
+  max-width: 307px;
+}
+section article:first-of-type {
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+@media (min-width: 660px) {
+  section article:first-of-type {
+    max-width: 308px;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+  }
+}
+section article:last-of-type {
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+@media (min-width: 660px) {
+  section article:last-of-type {
+    max-width: 308px;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+  }
+}
+section article > div {
+  padding: 3rem;
+}
+section article header h1 {
+  margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
+  text-transform: uppercase;
+  font-family: 'Big Shoulders Display', cursive;
+  font-weight: 700;
+  font-size: 30pt;
+  color: #f2f2f2;
+}
+@media (min-width: 660px) {
+  section article header h1 {
+    margin-top: 2rem;
+    margin-bottom: 1.75rem;
+  }
+}
+@media (min-width: 660px) {
+  section article p {
+    line-height: 1.7;
+  }
+}
+section article footer {
+  margin-top: 2.5rem;
+}
+@media (min-width: 660px) {
+  section article footer {
+    margin-top: 5rem;
+  }
+}
+section article footer button {
+  background-color: #f2f2f2;
+  padding: 0.75rem 1.8rem;
+  border-radius: 2rem;
+  font-size: 15px;
+  cursor: pointer;
+  border: #f2f2f2 3px solid;
+  transition-property: background, color;
+  transition-duration: 300ms;
+}
+.sedan {
+  background-color: #e38826;
+}
+.sedan button {
+  color: #e38826;
+}
+.sedan button:hover {
+  background-color: #e38826;
+  color: #f2f2f2;
+}
+.suv {
+  background-color: #006970;
+}
+.suv button {
+  color: #006970;
+}
+.suv button:hover {
+  background-color: #006970;
+  color: #f2f2f2;
+}
+.luxury {
+  background-color: #004241;
+}
+.luxury button {
+  color: #004241;
+}
+.luxury button:hover {
+  background-color: #004241;
+  color: #f2f2f2;
+}
